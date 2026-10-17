@@ -1,0 +1,11 @@
+{
+  "name": "Apna AI",
+  "short_name": "Apna AI",
+  "description": "Hindi and English AI tools in one place",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080c18",
+  "theme_color": "#0b1020",
+  "orientation": "portrait",
+  "icons": []
+}
