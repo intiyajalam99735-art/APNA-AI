@@ -6,7 +6,6 @@
 <meta name="theme-color" content="#080d1b">
 <title>Apna AI</title>
 <link rel="icon" type="image/svg+xml" href="assets/apna-ai-logo.svg">
-<meta name="apple-mobile-web-app-title" content="Apna AI">
 <style>
 :root{--bg:#080d1b;--panel:#111a2e;--line:#263552;--text:#f5f7ff;--muted:#aab5cc;--blue:#6b7cff;--purple:#b05cff}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#1a1745 0,transparent 35%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
@@ -19,7 +18,7 @@
 </head>
 <body><main class="wrap">
 <header class="top">
-<img class="avatar" src="assets/apna-ai-profile.png" alt="Aapki profile photo" onerror="this.style.display='none'">
+<img class="avatar" src="assets/apna-ai-profile.png" alt="Apna AI profile" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="avatar" style="display:none;place-items:center;background:linear-gradient(135deg,#6b7cff,#b05cff);font-weight:900">AA</div>
 <div><div class="brand">Apna AI</div><div class="sub">Tumhara apna AI workspace</div></div>
 <div class="pill">✦ Preview</div>
 </header>
@@ -56,6 +55,6 @@ ideas:['Idea Generator','Apne channel, business ya project ka topic likho.'],
 translate:['Hindi + English Helper','Text likho aur batao kis language mein chahiye.']
 };
 function showTool(name){current=name;document.getElementById('toolTitle').textContent=tools[name][0];document.getElementById('toolDesc').textContent=tools[name][1];document.getElementById('prompt').placeholder='Apna idea yahan likho...';document.getElementById('output').style.display='none';document.getElementById('toolPanel').scrollIntoView({behavior:'smooth',block:'start'});}
-function makeDraft(){const v=document.getElementById('prompt').value.trim();const out=document.getElementById('output');if(!v){out.textContent='Pehle apna idea ya sawal likho.';}else{const intro={chat:'Tumhara sawal:',image:'Image prompt idea:',video:'Video prompt idea:',write:'Writing draft idea:',ideas:'Idea note:',translate:'Language helper input:'};out.textContent=intro[current]+'\\n\\n'+v+'\\n\\nYeh abhi local demo hai. Real AI jawab ke liye secure AI backend connect karna hoga.';}out.style.display='block';}
+function makeDraft(){const v=document.getElementById('prompt').value.trim();const out=document.getElementById('output');if(!v){out.textContent='Pehle apna idea ya sawal likho.';}else{const intro={chat:'Tumhara sawal:',image:'Image prompt idea:',video:'Video prompt idea:',write:'Writing draft idea:',ideas:'Idea note:',translate:'Language helper input:'};out.textContent=intro[current]+'\n\n'+v+'\n\nYeh abhi local demo hai. Real AI jawab ke liye secure AI backend connect karna hoga.';}out.style.display='block';}
 </script>
 </body></html>

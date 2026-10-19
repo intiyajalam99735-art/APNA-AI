@@ -1,0 +1,1 @@
+Apna AI update files. Upload index.html to repository root replacing the existing index.html. Upload the assets folder contents into a folder named assets (create it if needed): apna-ai-profile.png and apna-ai-logo.svg. Then commit changes. Keep a backup of your existing index.html first.
