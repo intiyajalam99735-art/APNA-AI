@@ -1,6 +1,6 @@
 {
   "name": "Apna AI",
-  "short_name": "Apna AI",
+  "short_name": "Apna AI"."description": "APNA AI is your personal AI assistant.",
   "description": "Hindi and English AI tools in one place",
   "start_url": "./index.html",
   "display": "standalone",
